@@ -1,0 +1,1 @@
+{"name":"new-teacher-mentor-planner","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test"},"engines":{"node":">=20"},"description":"新教师导师结对领域资料"}

@@ -1,0 +1,2 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import { readFile } from 'node:fs/promises'; import { hardConstraintKinds, planStates } from '../src/domain.js';
+test('结对样例保留求解所需字段', async () => { const data=JSON.parse(await readFile(new URL('../fixtures/matching-context.json', import.meta.url))); assert.ok(planStates.includes(data.planState)); assert.equal(data.teacher.subject, data.mentor.subjects[0]); assert.ok(data.mentor.capacity>0); assert.ok(hardConstraintKinds.includes('avoidance')); });
