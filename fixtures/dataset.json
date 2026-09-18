@@ -1,0 +1,22 @@
+{
+  "teachers": [
+    { "id": "T-101", "name": "林晓", "subject": "physics", "school": "S-01", "preferences": { "preferredSchools": ["S-04"] } },
+    { "id": "T-102", "name": "陈默", "subject": "physics", "school": "S-03", "preferences": { "preferredSchools": ["S-02"] } },
+    { "id": "T-103", "name": "苏航", "subject": "physics", "school": "S-04", "preferences": { "preferredSchools": ["S-03"] } },
+    { "id": "T-104", "name": "何苗", "subject": "math", "school": "S-01", "preferences": { "priorCollaborators": ["M-203"] } },
+    { "id": "T-105", "name": "杜若", "subject": "math", "school": "S-02", "preferences": {} },
+    { "id": "T-106", "name": "秦岭", "subject": "chemistry", "school": "S-01", "preferences": {} },
+    { "id": "T-107", "name": "江离", "subject": "chemistry", "school": "S-02", "preferences": { "preferredSchools": ["S-03"] } },
+    { "id": "T-108", "name": "白鹭", "subject": "physics", "school": "S-02", "preferences": { "preferredSchools": ["S-04"] } }
+  ],
+  "mentors": [
+    { "id": "M-201", "name": "周岚", "subjects": ["physics", "chemistry"], "school": "S-02", "capacity": 2 },
+    { "id": "M-202", "name": "吴桐", "subjects": ["physics"], "school": "S-03", "capacity": 1 },
+    { "id": "M-203", "name": "郑海", "subjects": ["math"], "school": "S-02", "capacity": 2 },
+    { "id": "M-204", "name": "许静", "subjects": ["math", "physics"], "school": "S-04", "capacity": 2 },
+    { "id": "M-205", "name": "高远", "subjects": ["chemistry"], "school": "S-03", "capacity": 1 }
+  ],
+  "avoidance": [
+    { "teacherId": "T-103", "mentorId": "M-201", "reason": "亲属回避" }
+  ]
+}

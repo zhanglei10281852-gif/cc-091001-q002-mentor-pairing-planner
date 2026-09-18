@@ -1,1 +1,1 @@
-{"name":"new-teacher-mentor-planner","version":"0.1.0","private":true,"type":"module","scripts":{"test":"node --test"},"engines":{"node":">=20"},"description":"新教师导师结对领域资料"}
+{"name":"new-teacher-mentor-planner","version":"0.2.0","private":true,"type":"module","scripts":{"test":"node --test","start":"node src/server.js","demo":"node scripts/demo.js"},"engines":{"node":">=20"},"description":"新教师导师结对编排：可解释求解、草案比较、确认发布、调换追溯"}
