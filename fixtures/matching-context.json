@@ -1,1 +1,26 @@
-{"teacher":{"id":"T-101","subject":"physics","school":"S-01"},"mentor":{"id":"M-201","subjects":["physics"],"school":"S-02","capacity":2},"avoidance":[],"planState":"draft"}
+{
+  "planState": "draft",
+  "teacher": { "id": "T-101", "subject": "physics", "school": "S-01" },
+  "mentor": { "id": "M-201", "subjects": ["physics"], "school": "S-02", "capacity": 2 },
+  "avoidance": [],
+  "teachers": [
+    { "id": "T-101", "name": "周明", "subject": "physics", "school": "S-01", "token": "teacher-T-101" },
+    { "id": "T-102", "name": "林珊", "subject": "physics", "school": "S-03", "token": "teacher-T-102" },
+    { "id": "T-103", "name": "陈启航", "subject": "math", "school": "S-01", "token": "teacher-T-103" },
+    { "id": "T-104", "name": "黄蕾", "subject": "chemistry", "school": "S-05", "token": "teacher-T-104" }
+  ],
+  "mentors": [
+    { "id": "M-201", "name": "吴立德", "subjects": ["physics"], "school": "S-02", "capacity": 2, "token": "mentor-M-201" },
+    { "id": "M-202", "name": "郑文", "subjects": ["physics", "general-science"], "school": "S-03", "capacity": 1, "token": "mentor-M-202" },
+    { "id": "M-203", "name": "孙启年", "subjects": ["math"], "school": "S-04", "capacity": 1, "token": "mentor-M-203" },
+    { "id": "M-204", "name": "何静", "subjects": ["chemistry"], "school": "S-06", "capacity": 1, "token": "mentor-M-204" }
+  ],
+  "compatibility": { "general-science": ["physics", "chemistry", "math"] },
+  "avoidances": [
+    { "teacherId": "T-101", "mentorId": "M-202", "reason": "既往合作冲突，登记回避" }
+  ],
+  "preferences": [
+    { "teacherId": "T-101", "mentorId": "M-201", "kind": "prior-collaboration" },
+    { "teacherId": "T-103", "mentorId": "M-203", "kind": "preferred-school" }
+  ]
+}
